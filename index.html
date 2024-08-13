@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>FMS</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="left">
+        <h1
+          id="mst"
+          style="font-family: Bonheur Royale; font-size: 40px; cursor: pointer"
+        >
+          MST
+        </h1>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <button><a href="./signup.html">Try it for Free</a></button>
+          </li>
+        </ul>
+      </div>
+      <div class="r-h">
+        <img id="hamburger" src="./burger-menu.png" width="100px" alt="" />
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="c-left">
+        <h1 id="fms">
+          Financial Management <br />
+          System
+        </h1>
+        <div class="para">
+          <script type="text/javascript" id="para">
+            document.writeln(
+              "<p >Effortlessly manage your finances with our comprehensive Financial Management System. Track expenses, budget efficiently, and gain valuable insights into your financial health. Our intuitive platform offers real-time analytics, secure transactions, and personalized financial advice to help you achieve your financial goals.</p>"
+            );
+          </script>
+        </div>
+        <div class="container-btn">
+          <button id="c-btn">
+            <a href="./signup.html" style="background-color: transparent"
+              >Register</a
+            >
+          </button>
+          <button id="c-btn">
+            <a href="./login.html" style="background-color: transparent"
+              >Login</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="c-right">
+        <img src="./feedback.png" width="400px" />
+      </div>
+    </div>
+    <div class="feedback">
+      <div
+        class="f-left"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <img id="f-img" src="./home.png" alt="" width="400" />
+      </div>
+      <form action="https://usebasin.com/f/0cdc842d7202" method="POST">
+        <div class="f-right">
+          <h2 data-aos="fade-up">Feedback</h2>
+          <input
+            type="text"
+            name="name"
+            data-aos="fade-up"
+            placeholder="Name"
+          />
+          <input
+            type="email"
+            name="email"
+            data-aos="fade-up"
+            placeholder="Email"
+          />
+          <textarea
+         
+            placeholder="Your feedback is valuable to us. Please let us know how we can improve our platform."
+            name="content"
+            
+          >
+          </textarea>
+          <input type="Submit" name="" />
+        </div>
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
