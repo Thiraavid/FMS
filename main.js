@@ -11,9 +11,68 @@ document.addEventListener("keypress", (e) => {
   }
 });
 
-// AOS.init();
-// gsap.from("nav", {  y: -100, duration: 1 });
-// gsap.from("#fms", {  y: 10, duration: 1,delay:1 ,opacity:0});
-// gsap.from(".para", {  y: 10, duration: 1,delay:2 ,opacity:0});
-// gsap.from("#c-btn", {  y: 10, duration: 1,delay:3 ,opacity:0, scale:0});
-// gsap.from(".c-right", {  x: 1000, duration: 1,delay:2 ,opacity:0, });
+ScrollReveal().reveal("nav", {
+  origin: "top",
+  distance: "100px",
+  duration: 2000,
+
+  ease: "easeOut",
+});
+ScrollReveal().reveal("#fms", {
+  origin: "bottom",
+  distance: "10px",
+  opacity: "0",
+  duration: 2000,
+  delay: "500",
+  ease: "ease",
+});
+ScrollReveal().reveal("p", {
+  origin: "bottom",
+  distance: "10px",
+  opacity: "0",
+  duration: 2000,
+  delay: "1000",
+  ease: "ease",
+});
+ScrollReveal().reveal("h2", {
+  origin: "bottom",
+  distance: "10px",
+  opacity: "0",
+  duration: 2000,
+ 
+  ease: "ease",
+});
+ScrollReveal().reveal("#c-r", {
+  origin: "right",
+  distance: "100px",
+  opacity: "0",
+  duration: 1000,
+  delay: "1000",
+  ease: "ease",
+});
+ScrollReveal().reveal("#f-img", {
+  origin: "left",
+  distance: "100px",
+  opacity: "0",
+  duration: 1000,
+
+  ease: "ease",
+});
+ScrollReveal().reveal("button", {
+  origin: "bottom",
+  distance: "10px",
+  scale: 0,
+  opacity: "0",
+  duration: 2500,
+  delay: "1000",
+  ease: "ease",
+});
+ScrollReveal().reveal("#fm", {
+  origin: "bottom",
+  distance: "10px",
+interval:200,
+  opacity: "0",
+  duration: 2500,
+
+  ease: "ease",
+});
