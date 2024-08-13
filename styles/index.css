@@ -171,10 +171,9 @@ a {
   color: #757575;
   font-size: 14px;
 } */
- textarea::placeholder {
+textarea::placeholder {
   color: #757575;
   z-index: 1000;
- 
 }
 .f-right input:focus {
   outline: none !important;
@@ -211,10 +210,25 @@ textarea:focus {
   }
   .f-right input {
     width: 25rem;
+    padding: 1rem;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    filter: drop-shadow(10px 10px 1px #010101);
+    box-shadow: inset 2px 2px 5px white;
+    background-color: #010b0c;
   }
   .f-right textarea {
     width: 25rem;
     height: 6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    filter: drop-shadow(10px 10px 1px #010101);
+    box-shadow: inset 2px 2px 5px white;
+    background-color: #010b0c;
   }
   .r-h img {
     display: block;
