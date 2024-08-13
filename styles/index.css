@@ -173,6 +173,7 @@ a {
 } */
  textarea::placeholder {
   color: #757575;
+  z-index: 1000;
  
 }
 .f-right input:focus {
