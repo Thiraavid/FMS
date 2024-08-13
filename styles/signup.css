@@ -66,6 +66,14 @@ body{
 @media (max-width: 767px) {
     .signup input{
         width: 25rem;
+        border: #276df1 2px solid;
+        box-shadow: inset 0px 0px;
     }
     
+      .signup textarea {
+        width: 25rem;
+        height: 6rem;
+        border: #276df1 2px solid;
+        box-shadow: inset 0px 0px;
+      }
 }

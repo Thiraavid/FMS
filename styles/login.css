@@ -67,6 +67,9 @@ body{
 @media (max-width: 767px) {
     .login input{
         width: 25rem;
+        border: #276df1 2px solid;
+        box-shadow: inset 0px 0px;
     }
+    
     
 }

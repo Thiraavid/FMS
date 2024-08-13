@@ -228,8 +228,9 @@ textarea:focus {
     border-color: #276df1;
     box-shadow: 0 0 10px #276df1;
   }
+  .r-h{
+display:block !important;
+
+  }
   
-}
-.r-h {
-  display: none;
 }
