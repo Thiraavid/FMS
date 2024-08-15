@@ -1,5 +1,6 @@
 const mst = document.getElementById("mst");
 const fms = document.getElementById("fms");
+const x = document.getElementById("demo");
 
 mst.addEventListener("click", () => {
   fms.style.color = "red";
@@ -10,6 +11,23 @@ document.addEventListener("keypress", (e) => {
     fms.style.color = "blue";
   }
 });
+
+const showPosition = (position) => {
+  x.innerHTML =
+    "Latitude:" +
+    position.coords.latitude +
+    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Longitude:" +
+    position.coords.longitude;
+};
+
+const getLocation = () => {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+};
+getLocation();
 
 ScrollReveal().reveal("nav", {
   origin: "top",
@@ -39,7 +57,7 @@ ScrollReveal().reveal("h2", {
   distance: "10px",
   opacity: "0",
   duration: 2000,
- 
+
   ease: "ease",
 });
 ScrollReveal().reveal("#c-r", {
@@ -67,10 +85,10 @@ ScrollReveal().reveal("button", {
   delay: "1000",
   ease: "ease",
 });
-ScrollReveal().reveal("#fm", {
+ScrollReveal().reveal(".fm", {
   origin: "bottom",
   distance: "10px",
-interval:200,
+  interval: 200,
   opacity: "0",
   duration: 2500,
 

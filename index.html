@@ -15,6 +15,7 @@
     <title>FMS</title>
   </head>
   <body>
+<div id="particles-js"></div>
     <nav id="nav">
       <div class="left">
         <h1
@@ -35,8 +36,8 @@
           </li>
         </ul>
       </div>
-      <div class="r-h" style="display: none;">
-        <img id="hamburger" src="./burger-menu.png" width="100px" alt=""   />
+      <div class="r-h" style="display: none">
+        <img id="hamburger" src="./burger-menu.png" width="100px" alt="" />
       </div>
     </nav>
 
@@ -54,12 +55,12 @@
           </script>
         </div>
         <div class="container-btn">
-          <button id="c-btn">
+          <button class="c-btn">
             <a href="./signup.html" style="background-color: transparent"
               >Register</a
             >
           </button>
-          <button id="c-btn">
+          <button class="c-btn">
             <a href="./login.html" style="background-color: transparent"
               >Login</a
             >
@@ -81,31 +82,26 @@
       </div>
       <form action="https://usebasin.com/f/0cdc842d7202" method="POST">
         <div class="f-right">
-          <h2 >Feedback</h2>
-          <input
-            type="text"
-            name="name"
-         id="fm"
-            placeholder="Name"
-          />
-          <input
-            type="email"
-            name="email"
-          id="fm"
-            placeholder="Email"
-          />
+          <h2>Feedback</h2>
+          <input type="text" name="name" class="fm" placeholder="Name" />
+          <input type="email" name="email"  placeholder="Email" class="fm " />
           <textarea
-            id="fm"
+           class="fm"
             name="fms"
             rows="4"
             cols="50"
             placeholder="Your feedback is valuable to us. Please let us know how we can improve our platform."
           ></textarea>
 
-          <input type="Submit" name="" id="fm" />
+          <input type="Submit" name="" class="fm" />
         </div>
       </form>
     </div>
+    <p id="demo"></p>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
     <script src="./main.js"></script>
+   
   </body>
 </html>

@@ -5,6 +5,13 @@
   font-family: "poppins", sans-serif;
   background-color: #010b0c;
 }
+#particles-js{
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 nav {
   display: flex;
@@ -210,8 +217,11 @@ textarea:focus {
   }
   .f-right input {
     width: 25rem;
-   border: #276df1 2px solid;
-   box-shadow: inset 0px 0px;
+    border: #276df1 2px solid;
+    box-shadow: inset 0px 0px;
+  }
+  #particles-js{
+    height: 250%;
   }
   .f-right textarea {
     width: 25rem;
@@ -228,9 +238,12 @@ textarea:focus {
     border-color: #276df1;
     box-shadow: 0 0 10px #276df1;
   }
-  .r-h{
-display:block !important;
-
+  .r-h {
+    display: block !important;
   }
-  
 }
+
+#demo {
+  color: white;
+}
+
