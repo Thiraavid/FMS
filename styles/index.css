@@ -241,9 +241,13 @@ textarea:focus {
   .r-h {
     display: block !important;
   }
+  #demo {
+    color: white;
+    font-size:small;
+  }
 }
 
 #demo {
   color: white;
-  font-size: small;
+
 }
