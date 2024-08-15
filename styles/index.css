@@ -5,7 +5,7 @@
   font-family: "poppins", sans-serif;
   background-color: #010b0c;
 }
-#particles-js{
+#particles-js {
   width: 100%;
   height: 200%;
   position: absolute;
@@ -59,11 +59,12 @@ a {
 }
 
 .right button:hover {
-  transition: ease-in-out all 400ms;
+  transition: ease-in-out 400s all;
   transform: translateY(-5px);
   filter: drop-shadow(5px 5px 1px white);
   text-decoration: none;
 }
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -220,7 +221,7 @@ textarea:focus {
     border: #276df1 2px solid;
     box-shadow: inset 0px 0px;
   }
-  #particles-js{
+  #particles-js {
     height: 180%;
   }
   .f-right textarea {
@@ -241,10 +242,8 @@ textarea:focus {
   .r-h {
     display: block !important;
   }
-  
 }
 
 #demo {
   color: white;
 }
-
