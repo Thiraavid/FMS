@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/signup.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/signup.css" />
     <title>Sign Up</title>
-</head>
-<body>
-    <div class="signup">
-        <h2>Sign Up</h2>
-        <input type="text" name="" id="" placeholder="First Name">
-        <input type="text" name="" id="" placeholder="Last Name">
-        <input type="email" name="" id="" placeholder="Email">
-        <input type="password" name="" id="" placeholder="Password">
-        <input type="submit" name="" id="">
-        <p style="color: white;">Already hav an account? <a href="./login.html" style="color: #276df1;">Login</a></p>
-    </div>
-</body>
+  </head>
+  <body>
+   
+    <form id="form" action="/login.html" method="GET" >
+        <div class="signup">
+          <h2>Sign Up</h2>
+          <input type="text" id="firstname" placeholder="First Name" />
+          <p id="firstname-error" class="error-message" ></p>
+          
+          <input type="text" id="lastname" placeholder="Last Name" />
+          <p id="lastname-error" class="error-message"></p>
+          
+          <input type="email" id="email" placeholder="Email" />
+          <p id="email-error" class="error-message"></p>
+          
+          <input type="password" id="password" placeholder="Password" />
+          <p id="password-error" class="error-message"></p>
+          <label style="color: white;">Your Image File <br>
+            <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg" style="border: none; background-color: transparent;" />
+          </label>
+          <input type="submit" value="Sign Up" />
+          
+          <p style="color: white">
+            Already have an account?
+            <a href="./login.html" style="color: #276df1">Login</a>
+          </p>
+        </div>
+      </form>
+    <script src="/js/signup.js"></script>
+  </body>
 </html>

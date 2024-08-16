@@ -2,6 +2,7 @@ const mst = document.getElementById("mst");
 const fms = document.getElementById("fms");
 const x = document.getElementById("demo");
 
+
 mst.addEventListener("click", () => {
   fms.style.color = "red";
 });

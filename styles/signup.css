@@ -16,7 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 .signup h2{
     color:#276df1;
@@ -77,3 +77,12 @@ body{
         box-shadow: inset 0px 0px;
       }
 }
+
+.error-message {
+    color: red;
+    font-size:10px;
+    margin-top: 1px;
+  }
+  .input-error {
+    border: 2px solid red;
+  }

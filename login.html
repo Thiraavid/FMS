@@ -7,16 +7,17 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="">
+    <form class="login" onsubmit="return validateForm()">
     <div class="login">
         <h1>Log In!</h1>
-        <input type="text" name="" id="" placeholder="Name">
-        <input type="email" name="" id="" placeholder="Email">
-        <input type="password" name="" id="" placeholder="Password">
-        <input type="submit" name="" id="">
+        <input type="text" name="" id="name" placeholder="Name" pattern="[A-Za-z\s]+">
+        <input type="email" name="" id="email" placeholder="Email">
+        <input type="password" name="" id="password" placeholder="Password" pattern="\d+">
+        <input type="submit" >
         <p style="color: white; position: relative;left: 0;">Don't have an account? <a href="./signup.html" style="color:#276df1
         ">Register</a></p>
     </div>
 </form>
+ <script src="/js/login.js"></script>
 </body>
 </html>
